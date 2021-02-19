@@ -10,14 +10,13 @@ function Albums() {
           <h1 className="text-center">Albums</h1>
           <div className="row">
             <div className="col-6 offset-3">
-              <ul className="list-group-flush">
-                {albums.map((album) => (
-                  <li
-                    className="list-group-item"
-                    key={album.id}
-                  >{`${album.id}. ${album.title}`}</li>
-                ))}
-              </ul>
+              {albums.map((album) => (
+                <img
+                  src={album.thumbnailUrl}
+                  alt={album.id}
+                  key={album.id}
+                ></img>
+              ))}
             </div>
           </div>
         </div>

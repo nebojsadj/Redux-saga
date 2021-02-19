@@ -3,7 +3,7 @@ import { error_data, success_data } from "./actions";
 import { LOADING_DATA } from "./types";
 
 function getData() {
-  return fetch("https://jsonplaceholder.typicode.com/albums")
+  return fetch("https://jsonplaceholder.typicode.com/photos")
     .then((response) => response.json())
     .catch((error) => {
       throw error;

@@ -5,7 +5,7 @@ import Photo from "./Photo";
 function Albums() {
   const albums = useSelector((state) => state.albums.albums);
   const albumId1 = albums.filter((el) => el.albumId === 1);
-  console.log(albumId1);
+
   return (
     <div className="container-fluid">
       <div className="row">
